@@ -1,10 +1,53 @@
 ---
-name: Getting Started
+name: Plone Quickstart
 route: /
 ---
 
-# Getting Started
+# Plone developer quickstart
 
-## Hello world
+## Creating an add-on for plone
 
-Type here the most beautyiful getting started that you ever saw!
+### install plonecli and create an addon with it
+
+```
+mkdir quickstart
+cd quickstart
+python3 -m venv .
+source bin/activate
+pip install plonecli
+plonecli create addon ploneconf.quickstart
+    - answer all questions
+deactivate
+```
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/mVzOAfJ3FEw"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+/>
+
+### inside the addon install the requirements
+
+```
+cd ploneconf.quickstart
+python3 -m venv .
+./bin/pip install -r requirements.txt
+./bin/buildout
+```
+
+### start instance
+
+```
+./bin/instance
+```
+
+### create plone site
+
+### install ploneconf.quickstart package
+
+- In the toolbar left bottom corner go to `admin` - `Site Settings`
+- Click on `Addons`
+- Find `ploneconf.quickstart` and click the Ìnstall` button next to it

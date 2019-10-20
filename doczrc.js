@@ -1,10 +1,10 @@
 import * as colors from './src/utils/colors'
 
 export default {
-  title: 'Coolest Library',
+  title: 'Plone Quickstart',
   base: '/docs',
   ignore: ['**/blog/**', 'readme.md'],
-  menu: ['Getting Started', 'Components'],
+  menu: ['Getting Started'],
   themeConfig: {
     colors: {
       primary: colors.primary,
